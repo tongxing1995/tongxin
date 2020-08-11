@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <meta charset="gb2312">
-    <title>Ñ¾Í·</title>>
+	< meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+    <title>ä¸«å¤´</title>>
     <style type="text/css">
 			*{ margin:0; padding:0;}
 			body{
@@ -26,7 +27,7 @@
 				margin:600px auto;
 				position:relative;
 
-				/*´î½¨3DĞ§¹û±ØĞëµÄÁ½¸öÊôĞÔ£ºÒ»¸ö±ä»»·ç¸ñ±ä3d£¬Ò»¸ö³¡¾°¾°Éî800px*/
+				/*æ­å»º3Dæ•ˆæœå¿…é¡»çš„ä¸¤ä¸ªå±æ€§ï¼šä¸€ä¸ªå˜æ¢é£æ ¼å˜3dï¼Œä¸€ä¸ªåœºæ™¯æ™¯æ·±800px*/
 				transform-style:preserve-3d;
 				transform:rotateX(-10deg) rotateY(0deg);
 				
@@ -36,8 +37,8 @@
 				height:100%;
 				position:absolute;
 				
-				 border-radius: 5px; /*¼ÓÉÏÔ²½Ç*/
-            box-shadow: 0px 0px 10px #fff;/*box-shadow ÊôĞÔÏò¿òÌí¼ÓÒ»¸ö»ò¶à¸öÒõÓ°*/
+				 border-radius: 5px; /*åŠ ä¸Šåœ†è§’*/
+            box-shadow: 0px 0px 10px #fff;/*box-shadow å±æ€§å‘æ¡†æ·»åŠ ä¸€ä¸ªæˆ–å¤šä¸ªé˜´å½±*/
             -webkit-box-reflect: below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%);
 			}
 			#wrap p{
@@ -61,7 +62,7 @@
 </div>
 
 <div style = "margin-left:300px"> 
-<marquee behavior = "alternate" width=500 ><span style = "font-weight:bolder;margin-left=250px;font-family:STKaiti;font-size:40px;color:white;align= center;">Ï²»¶Áá¶ù</span></marquee>
+<marquee behavior = "alternate" width=500 ><span style = "font-weight:bolder;margin-left=250px;font-family:STKaiti;font-size:40px;color:white;align= center;">å–œæ¬¢ç²å„¿</span></marquee>
 </div>
 <div id = "area"
      style = "font-family:STKaiti;font-size:25px;color:white;margin-left:200px;margin-right:200px;"
@@ -94,7 +95,7 @@
 		        var t,r,q,j=0;                                                         
                 var c = 0;
 			    var oWrap = document.getElementById('wrap');
-                var str="×Ô´ÓÓö¼ûÄãÒÔºó		ÄÚĞÄµÄºşÃæÃ¿ÌìÒòÄã¶øÆğÁ°äô";
+                var str="è‡ªä»é‡è§ä½ ä»¥å		å†…å¿ƒçš„æ¹–é¢æ¯å¤©å› ä½ è€Œèµ·æ¶Ÿæ¼ª";
                 var len=str.length;
                 var n=1;		 
 			  
@@ -106,8 +107,8 @@
             // alert(info);
         }
         function forceSafariPlayAudio() {
-            audioEl.load(); // iOS 9   »¹ĞèÒª¶îÍâµÄ load Ò»ÏÂ, ·ñÔòÖ±½Ó play ÎŞĞ§
-            audioEl.play(); // iOS 7/8 ½öĞèÒª play Ò»ÏÂ
+            audioEl.load(); // iOS 9   è¿˜éœ€è¦é¢å¤–çš„ load ä¸€ä¸‹, å¦åˆ™ç›´æ¥ play æ— æ•ˆ
+            audioEl.play(); // iOS 7/8 ä»…éœ€è¦ play ä¸€ä¸‹
         }
 
         var audioEl = document.getElementById('bgmusic');audioEl.addEventListener('loadstart', function() {
@@ -124,7 +125,7 @@
         }, false);
         audioEl.addEventListener('play', function() {
             log('play');
-            // µ± audio ÄÜ¹»²¥·Åºó, ÒÆ³ıÕâ¸öÊÂ¼ş
+            // å½“ audio èƒ½å¤Ÿæ’­æ”¾å, ç§»é™¤è¿™ä¸ªäº‹ä»¶
             window.removeEventListener('touchstart', forceSafariPlayAudio, false);
         }, false);
         audioEl.addEventListener('playing', function() {
@@ -134,11 +135,11 @@
             log('pause');
         }, false);
 
-        // ÓÉÓÚ iOS Safari ÏŞÖÆ²»ÔÊĞí audio autoplay, ±ØĞëÓÃ»§Ö÷¶¯½»»¥(ÀıÈç click)ºó²ÅÄÜ²¥·Å audio,
-        // Òò´ËÎÒÃÇÍ¨¹ıÒ»¸öÓÃ»§½»»¥ÊÂ¼şÀ´Ö÷¶¯ play Ò»ÏÂ audio.
+        // ç”±äº iOS Safari é™åˆ¶ä¸å…è®¸ audio autoplay, å¿…é¡»ç”¨æˆ·ä¸»åŠ¨äº¤äº’(ä¾‹å¦‚ click)åæ‰èƒ½æ’­æ”¾ audio,
+        // å› æ­¤æˆ‘ä»¬é€šè¿‡ä¸€ä¸ªç”¨æˆ·äº¤äº’äº‹ä»¶æ¥ä¸»åŠ¨ play ä¸€ä¸‹ audio.
         window.addEventListener('touchstart', forceSafariPlayAudio, false);
 
-        audioEl.src = 'Ğ¡Á¦Í¬Ñ§ - ÊÀ¼äÃÀºÃÓëÄã»·»·Ïà¿Û£¨Ñ¦Ö®Ç«·ÛË¿°æ£©£¨cover°ØËÉ£©.mp3';
+        audioEl.src = 'å°åŠ›åŒå­¦ - ä¸–é—´ç¾å¥½ä¸ä½ ç¯ç¯ç›¸æ‰£ï¼ˆè–›ä¹‹è°¦ç²‰ä¸ç‰ˆï¼‰ï¼ˆcoveræŸæ¾ï¼‰.mp3';
     })();
 	
 
@@ -189,47 +190,47 @@
 				
                                                             
 
-				// ÍÏ×§£ºÈı¸öÊÂ¼ş-°´ÏÂ ÒÆ¶¯ Ì§Æğ
-				//°´ÏÂ					
+				// æ‹–æ‹½ï¼šä¸‰ä¸ªäº‹ä»¶-æŒ‰ä¸‹ ç§»åŠ¨ æŠ¬èµ·
+				//æŒ‰ä¸‹					
 				document.onmousedown = function(ev){
 					
                     
-					//Êó±ê°´ÏÂµÄÊ±ºò£¬¸øÇ°Ò»µã×ø±ê¸³Öµ£¬ÎªÁË±ÜÃâµÚÒ»´ÎÏà¼õµÄÊ±ºò³ö´í
+					//é¼ æ ‡æŒ‰ä¸‹çš„æ—¶å€™ï¼Œç»™å‰ä¸€ç‚¹åæ ‡èµ‹å€¼ï¼Œä¸ºäº†é¿å…ç¬¬ä¸€æ¬¡ç›¸å‡çš„æ—¶å€™å‡ºé”™
 					lastX = ev.clientX;
 					lastY = ev.clientY;
 					
-					//ÒÆ¶¯
+					//ç§»åŠ¨
 					this.onmousemove = function(ev){
 						ev = ev || window.event;
 
 						clearInterval( timer );
 
-						nowX = ev.clientX; // clientX Êó±ê¾àÀëÒ³Ãæ×ó±ßµÄ¾àÀë
-						nowY = ev.clientY; // clientY ¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­¶¥²¿¡­¡­¡­¡­¡­¡­
+						nowX = ev.clientX; // clientX é¼ æ ‡è·ç¦»é¡µé¢å·¦è¾¹çš„è·ç¦»
+						nowY = ev.clientY; // clientY â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦é¡¶éƒ¨â€¦â€¦â€¦â€¦â€¦â€¦
 
-						//µ±Ç°×ø±êºÍÇ°Ò»µã×ø±ê²îÖµ
+						//å½“å‰åæ ‡å’Œå‰ä¸€ç‚¹åæ ‡å·®å€¼
 						minusX = nowX - lastX; 
 						minusY = nowY - lastY;
 						
-						//¸üĞÂwrapµÄĞı×ª½Ç¶È£¬ÍÏ×§Ô½¿ì-> minus±ä»¯´ó -> roY±ä»¯´ó -> Ğı×ª¿ì
+						//æ›´æ–°wrapçš„æ—‹è½¬è§’åº¦ï¼Œæ‹–æ‹½è¶Šå¿«-> minuså˜åŒ–å¤§ -> roYå˜åŒ–å¤§ -> æ—‹è½¬å¿«
 						roY += minusX*0.2; // roY = roY + minusX*0.2;
 						roX -= minusY*0.1;
 	 
 						oWrap.style.transform = 'rotateX('+ roX +'deg) rotateY('+ roY +'deg)';
 						
 						/*
-						//Éú³Édiv£¬ÈÃdiv¸ú×ÅÊó±ê¶¯
+						//ç”Ÿæˆdivï¼Œè®©divè·Ÿç€é¼ æ ‡åŠ¨
 						var oDiv = document.createElement('div');
 						oDiv.style.cssText = 'width:5px;height:5px;background:red;position:fixed;left:'+nowX+'px;top:'+nowY+'px';
 						this.body.appendChild(oDiv);
 						*/
 						
-						//Ç°Ò»µãµÄ×ø±ê
+						//å‰ä¸€ç‚¹çš„åæ ‡
 						lastX = nowX;
 						lastY = nowY;
 
 					}
-					//Ì§Æğ
+					//æŠ¬èµ·
 					this.onmouseup = function(){
 						this.onmousemove = null;
 						timer = setInterval(function(){
